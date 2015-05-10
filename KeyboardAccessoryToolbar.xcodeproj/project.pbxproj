@@ -17,6 +17,7 @@
 		DF4B08AA1AFFF9BD0048283C /* LICENSE.md in Sources */ = {isa = PBXBuildFile; fileRef = DF4B08A81AFFF9BD0048283C /* LICENSE.md */; };
 		DF4B08AB1AFFF9BD0048283C /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = DF4B08A91AFFF9BD0048283C /* README.md */; };
 		DF4B08B01AFFFE250048283C /* KeyboardAccessoryToolbar.png in Resources */ = {isa = PBXBuildFile; fileRef = DF4B08AF1AFFFE250048283C /* KeyboardAccessoryToolbar.png */; };
+		DF4B08B21AFFFE8B0048283C /* AppPreview.png in Resources */ = {isa = PBXBuildFile; fileRef = DF4B08B11AFFFE8B0048283C /* AppPreview.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +45,7 @@
 		DF4B08A81AFFF9BD0048283C /* LICENSE.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = LICENSE.md; sourceTree = "<group>"; };
 		DF4B08A91AFFF9BD0048283C /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		DF4B08AF1AFFFE250048283C /* KeyboardAccessoryToolbar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = KeyboardAccessoryToolbar.png; sourceTree = "<group>"; };
+		DF4B08B11AFFFE8B0048283C /* AppPreview.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = AppPreview.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -128,6 +130,7 @@
 			isa = PBXGroup;
 			children = (
 				DF4B08AF1AFFFE250048283C /* KeyboardAccessoryToolbar.png */,
+				DF4B08B11AFFFE8B0048283C /* AppPreview.png */,
 			);
 			path = Images;
 			sourceTree = "<group>";
@@ -212,6 +215,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DF4B08B21AFFFE8B0048283C /* AppPreview.png in Resources */,
 				DF4B088C1AFFF7710048283C /* Main.storyboard in Resources */,
 				DF4B08911AFFF7710048283C /* LaunchScreen.xib in Resources */,
 				DF4B088E1AFFF7710048283C /* Images.xcassets in Resources */,
