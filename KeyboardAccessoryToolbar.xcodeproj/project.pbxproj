@@ -13,6 +13,9 @@
 		DF4B088E1AFFF7710048283C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DF4B088D1AFFF7710048283C /* Images.xcassets */; };
 		DF4B08911AFFF7710048283C /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = DF4B088F1AFFF7710048283C /* LaunchScreen.xib */; };
 		DF4B089D1AFFF7710048283C /* KeyboardAccessoryToolbarTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF4B089C1AFFF7710048283C /* KeyboardAccessoryToolbarTests.swift */; };
+		DF4B08A71AFFF7810048283C /* KeyboardAccessoryToolbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF4B08A61AFFF7810048283C /* KeyboardAccessoryToolbar.swift */; };
+		DF4B08AA1AFFF9BD0048283C /* LICENSE.md in Sources */ = {isa = PBXBuildFile; fileRef = DF4B08A81AFFF9BD0048283C /* LICENSE.md */; };
+		DF4B08AB1AFFF9BD0048283C /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = DF4B08A91AFFF9BD0048283C /* README.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +39,9 @@
 		DF4B08961AFFF7710048283C /* KeyboardAccessoryToolbarTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KeyboardAccessoryToolbarTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DF4B089B1AFFF7710048283C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DF4B089C1AFFF7710048283C /* KeyboardAccessoryToolbarTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardAccessoryToolbarTests.swift; sourceTree = "<group>"; };
+		DF4B08A61AFFF7810048283C /* KeyboardAccessoryToolbar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeyboardAccessoryToolbar.swift; sourceTree = "<group>"; };
+		DF4B08A81AFFF9BD0048283C /* LICENSE.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = LICENSE.md; sourceTree = "<group>"; };
+		DF4B08A91AFFF9BD0048283C /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +65,8 @@
 		DF4B08781AFFF7710048283C = {
 			isa = PBXGroup;
 			children = (
+				DF4B08A81AFFF9BD0048283C /* LICENSE.md */,
+				DF4B08A91AFFF9BD0048283C /* README.md */,
 				DF4B08831AFFF7710048283C /* KeyboardAccessoryToolbar */,
 				DF4B08991AFFF7710048283C /* KeyboardAccessoryToolbarTests */,
 				DF4B08821AFFF7710048283C /* Products */,
@@ -79,6 +87,7 @@
 			children = (
 				DF4B08861AFFF7710048283C /* AppDelegate.swift */,
 				DF4B08881AFFF7710048283C /* ViewController.swift */,
+				DF4B08A61AFFF7810048283C /* KeyboardAccessoryToolbar.swift */,
 				DF4B088A1AFFF7710048283C /* Main.storyboard */,
 				DF4B088D1AFFF7710048283C /* Images.xcassets */,
 				DF4B088F1AFFF7710048283C /* LaunchScreen.xib */,
@@ -212,7 +221,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DF4B08AA1AFFF9BD0048283C /* LICENSE.md in Sources */,
 				DF4B08891AFFF7710048283C /* ViewController.swift in Sources */,
+				DF4B08AB1AFFF9BD0048283C /* README.md in Sources */,
+				DF4B08A71AFFF7810048283C /* KeyboardAccessoryToolbar.swift in Sources */,
 				DF4B08871AFFF7710048283C /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
