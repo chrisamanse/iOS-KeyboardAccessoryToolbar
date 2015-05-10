@@ -8,23 +8,23 @@ Simply add KeyboardAccessoryToolbar.swift in your project.
 
 ## Usage
 
-extension ViewController: UITextFieldDelegate {
-    func textFieldShouldBeginEditing(textField: UITextField) -> Bool {
-        // Set to specific text field
-        if textField == self.textField {
-
-            // Set to text field if not yet added
-            if textField.inputAccessoryView == nil {
-                textField.inputAccessoryView = accessoryToolbar
+    extension ViewController: UITextFieldDelegate {
+        func textFieldShouldBeginEditing(textField: UITextField) -> Bool {
+            // Set to specific text field
+            if textField == self.textField {
+    
+                // Set to text field if not yet added
+                if textField.inputAccessoryView == nil {
+                    textField.inputAccessoryView = accessoryToolbar
+                }
+    
+                // Set toolbar's current text field to active text field
+                accessoryToolbar.currentTextField = textField
             }
-
-            // Set toolbar's current text field to active text field
-            accessoryToolbar.currentTextField = textField
+    
+            return true
         }
-
-        return true
-    }
-}
+    }  
 
 ## License
 
