@@ -16,6 +16,7 @@
 		DF4B08A71AFFF7810048283C /* KeyboardAccessoryToolbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF4B08A61AFFF7810048283C /* KeyboardAccessoryToolbar.swift */; };
 		DF4B08AA1AFFF9BD0048283C /* LICENSE.md in Sources */ = {isa = PBXBuildFile; fileRef = DF4B08A81AFFF9BD0048283C /* LICENSE.md */; };
 		DF4B08AB1AFFF9BD0048283C /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = DF4B08A91AFFF9BD0048283C /* README.md */; };
+		DF4B08B01AFFFE250048283C /* KeyboardAccessoryToolbar.png in Resources */ = {isa = PBXBuildFile; fileRef = DF4B08AF1AFFFE250048283C /* KeyboardAccessoryToolbar.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +43,7 @@
 		DF4B08A61AFFF7810048283C /* KeyboardAccessoryToolbar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeyboardAccessoryToolbar.swift; sourceTree = "<group>"; };
 		DF4B08A81AFFF9BD0048283C /* LICENSE.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = LICENSE.md; sourceTree = "<group>"; };
 		DF4B08A91AFFF9BD0048283C /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		DF4B08AF1AFFFE250048283C /* KeyboardAccessoryToolbar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = KeyboardAccessoryToolbar.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +69,7 @@
 			children = (
 				DF4B08A81AFFF9BD0048283C /* LICENSE.md */,
 				DF4B08A91AFFF9BD0048283C /* README.md */,
+				DF4B08AE1AFFFD780048283C /* Images */,
 				DF4B08831AFFF7710048283C /* KeyboardAccessoryToolbar */,
 				DF4B08991AFFF7710048283C /* KeyboardAccessoryToolbarTests */,
 				DF4B08821AFFF7710048283C /* Products */,
@@ -119,6 +122,14 @@
 				DF4B089B1AFFF7710048283C /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		DF4B08AE1AFFFD780048283C /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				DF4B08AF1AFFFE250048283C /* KeyboardAccessoryToolbar.png */,
+			);
+			path = Images;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -204,6 +215,7 @@
 				DF4B088C1AFFF7710048283C /* Main.storyboard in Resources */,
 				DF4B08911AFFF7710048283C /* LaunchScreen.xib in Resources */,
 				DF4B088E1AFFF7710048283C /* Images.xcassets in Resources */,
+				DF4B08B01AFFFE250048283C /* KeyboardAccessoryToolbar.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -423,6 +435,7 @@
 				DF4B08A21AFFF7710048283C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		DF4B08A31AFFF7710048283C /* Build configuration list for PBXNativeTarget "KeyboardAccessoryToolbarTests" */ = {
 			isa = XCConfigurationList;
@@ -431,6 +444,7 @@
 				DF4B08A51AFFF7710048283C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

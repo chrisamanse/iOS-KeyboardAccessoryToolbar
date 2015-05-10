@@ -1,6 +1,7 @@
 # KeyboardAccessoryToolbar
 
 A simple keyboard accessory toolbar for iOS implemented in Swift.
+![](./Images/KeyboardAccessoryToolbar.png)
 
 ## Installation
 
