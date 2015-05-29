@@ -28,32 +28,41 @@ class KeyboardAccessoryToolbar: UIToolbar {
     
     // MARK: - Custom bar items
     func addBarItems() {
-        let cancelBarButton = UIBarButtonItem(barButtonSystemItem: UIBarButtonSystemItem.Cancel, target: self, action: Selector("cancel"))
         let flexibleSpace = UIBarButtonItem(barButtonSystemItem: UIBarButtonSystemItem.FlexibleSpace, target: nil, action: nil)
         let doneBarButton = UIBarButtonItem(barButtonSystemItem: UIBarButtonSystemItem.Done, target: self, action: Selector("done"))
-        items = [cancelBarButton, flexibleSpace, doneBarButton]
-    }
-    
-    func cancel() {
-        currentTextField?.resignFirstResponder()
+        items = [flexibleSpace, doneBarButton]
     }
     
     func done() {
-        // Pressing done sends message to the textfield's delegate if text field should return
+        // Pressing done asks delegate if textField should end editing
+        // If delegate never implemented it, default to true
         // Simulate a return key press
-        var shouldReturn = currentTextField?.delegate?.textFieldShouldReturn?(currentTextField!)
-        
-        // If delegate never implemented should return, then default to true
-        shouldReturn = (shouldReturn == nil) ? true : shouldReturn!
-        if shouldReturn! {
-            // If delegate allow textfield to return, then resign as first responder
-            currentTextField?.resignFirstResponder()
+        var shouldReturn = true
+        if let textField = currentView as? UITextField {
+            shouldReturn = textField.delegate?.textFieldShouldEndEditing?(textField) ?? shouldReturn
+        } else if let textView = currentView as? UITextView {
+            shouldReturn = textView.delegate?.textViewShouldEndEditing?(textView) ?? shouldReturn
+        }
+
+        if shouldReturn {
+            println("shouldReturn")
+            // If delegate allow currentView to end editing, then resign as first responder
+            currentView?.resignFirstResponder()
         }
     }
     
-    // MARK: - Text field relation
-    
-    weak var currentTextField: UITextField?
+    // MARK: - Current view relation
+    weak var currentView: UIView? {
+        didSet {
+            if let textField = currentView as? UITextField {
+                println("isTextField")
+                textField.inputAccessoryView = self
+            } else if let textView = currentView as? UITextView {
+                println("isTextView")
+                textView.inputAccessoryView = self
+            }
+        }
+    }
     
     /*
     // Only override drawRect: if you perform custom drawing.
