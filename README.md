@@ -25,5 +25,5 @@ extension ViewController: UITextFieldDelegate {
 ```
 ## License
 
-Copyright (c) 2015 Joe Christopher Paul Amanse. This software is licensed under the [MIT License](./LICENSE.md)
+Copyright (c) 2015 Joe Christopher Paul Amanse. This software is distributed under the [MIT License](./LICENSE.md)
 
